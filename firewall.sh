@@ -7,7 +7,7 @@
 # description: Starts and stops iptables based firewall
 #
 ## Specify open ports.
-# 22 9722		SSH
+# 22 xx22		SSH
 # 21 20			FTP
 # 49152 65534	PassivePorts proftpd.conf
 # 80			HTTP (web)
@@ -33,7 +33,7 @@
 # 137-139 445	SMB/CIFS tcp
 # 3478 41641	Tailscale (UDP)
 #
-INPUT_TCP="9722 80 8080 443 20:21 25 465 587 993 110 143 10000 20000 53 5900 55000:56000"
+INPUT_TCP="80 8080 443 20:21 25 465 587 993 110 143 10000 20000 53 5900 55000:56000 990 2222 9722 10022"
 INPUT_UDP="53 5353 5060 694 55000:56000"
 #
 IPTABLES=/sbin/iptables
